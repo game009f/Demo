@@ -24,9 +24,9 @@ jobs:
 
     - name: Download Godot CLI
       run: |
-        wget https://downloads.tuxfamily.org/godotengine/4.0.2/Godot_v4.0.2-stable_x11.64.zip -O godot.zip
+        wget https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_linux.x86_64.zip -O godot.zip
         unzip godot.zip -d godot
-        mv godot/Godot_v4.0.2-stable_x11.64 godot
+        mv godot/Godot_v4.3-stable_linux.x86_64 godot
         chmod +x godot
 
     - name: Export APK
